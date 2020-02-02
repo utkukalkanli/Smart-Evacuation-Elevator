@@ -1,0 +1,15 @@
+# compile verilog/system verilog design source files
+sv xil_defaultlib  --include "C:/Xilinx/Vivado/2017.4/data/xilinx_vip/include" \
+"../../../../cs223_project.srcs/sources_1/new/SevSeg_4digit.sv" \
+"../../../../cs223_project.srcs/sources_1/new/display_8X8.sv" \
+"../../../../cs223_project.srcs/sources_1/new/fsm_game.sv" \
+"../../../../cs223_project.srcs/sources_1/new/fsm_score.sv" \
+"../../../../cs223_project.srcs/sources_1/new/stepmotor.sv" \
+"../../../../cs223_project.srcs/sources_1/new/top.sv" \
+"../../../../cs223_project.srcs/sim_1/new/testbench.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

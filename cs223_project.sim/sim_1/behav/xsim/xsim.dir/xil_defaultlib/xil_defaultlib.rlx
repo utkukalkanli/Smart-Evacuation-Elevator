@@ -1,0 +1,13 @@
+0.6
+2017.4
+Dec 15 2017
+21:07:18
+C:/Users/ececa/VivadoProjects18/cs223_project/cs223_project.sim/sim_1/behav/xsim/glbl.v,1513215259,verilog,,,,glbl,,xil_defaultlib,,,,,,
+C:/Users/ececa/VivadoProjects18/cs223_project/cs223_project.srcs/sim_1/new/fsm_game_testbench.sv,1525694577,systemVerilog,,,,fsm_game_testbench,,xil_defaultlib,C:/Xilinx/Vivado/2017.4/data/xilinx_vip/include,,,,,
+C:/Users/ececa/VivadoProjects18/cs223_project/cs223_project.srcs/sim_1/new/testbench.sv,1524388080,systemVerilog,,,,testbench,,xil_defaultlib,C:/Xilinx/Vivado/2017.4/data/xilinx_vip/include,,,,,
+C:/Users/ececa/VivadoProjects18/cs223_project/cs223_project.srcs/sources_1/new/SevSeg_4digit.sv,1525609075,systemVerilog,,C:/Users/ececa/VivadoProjects18/cs223_project/cs223_project.srcs/sources_1/new/display_8X8.sv,,SevSeg_4digit,,xil_defaultlib,C:/Xilinx/Vivado/2017.4/data/xilinx_vip/include,,,,,
+C:/Users/ececa/VivadoProjects18/cs223_project/cs223_project.srcs/sources_1/new/display_8X8.sv,1524388410,systemVerilog,,C:/Users/ececa/VivadoProjects18/cs223_project/cs223_project.srcs/sources_1/new/fsm_game.sv,,display_8x8,,xil_defaultlib,C:/Xilinx/Vivado/2017.4/data/xilinx_vip/include,,,,,
+C:/Users/ececa/VivadoProjects18/cs223_project/cs223_project.srcs/sources_1/new/fsm_game.sv,1525688003,systemVerilog,,C:/Users/ececa/VivadoProjects18/cs223_project/cs223_project.srcs/sim_1/new/fsm_game_testbench.sv,,fsm_game,,xil_defaultlib,C:/Xilinx/Vivado/2017.4/data/xilinx_vip/include,,,,,
+C:/Users/ececa/VivadoProjects18/cs223_project/cs223_project.srcs/sources_1/new/fsm_score.sv,1525616080,systemVerilog,,C:/Users/ececa/VivadoProjects18/cs223_project/cs223_project.srcs/sources_1/new/stepmotor.sv,,fsm_score,,xil_defaultlib,C:/Xilinx/Vivado/2017.4/data/xilinx_vip/include,,,,,
+C:/Users/ececa/VivadoProjects18/cs223_project/cs223_project.srcs/sources_1/new/stepmotor.sv,1524388010,systemVerilog,,C:/Users/ececa/VivadoProjects18/cs223_project/cs223_project.srcs/sources_1/new/top.sv,,stepmotor,,xil_defaultlib,C:/Xilinx/Vivado/2017.4/data/xilinx_vip/include,,,,,
+C:/Users/ececa/VivadoProjects18/cs223_project/cs223_project.srcs/sources_1/new/top.sv,1525683588,systemVerilog,,C:/Users/ececa/VivadoProjects18/cs223_project/cs223_project.srcs/sim_1/new/testbench.sv,,top,,xil_defaultlib,C:/Xilinx/Vivado/2017.4/data/xilinx_vip/include,,,,,

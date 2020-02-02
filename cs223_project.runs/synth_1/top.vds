@@ -1,0 +1,711 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Tue May  8 15:41:32 2018
+# Process ID: 3712
+# Current directory: C:/Users/ececa/VivadoProjects18/cs223_project/cs223_project.runs/synth_1
+# Command line: vivado.exe -log top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
+# Log file: C:/Users/ececa/VivadoProjects18/cs223_project/cs223_project.runs/synth_1/top.vds
+# Journal file: C:/Users/ececa/VivadoProjects18/cs223_project/cs223_project.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source top.tcl -notrace
+Command: synth_design -top top -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 7192 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 346.762 ; gain = 102.738
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'top' [C:/Users/ececa/VivadoProjects18/cs223_project/cs223_project.srcs/sources_1/new/top.sv:1]
+INFO: [Synth 8-638] synthesizing module 'fsm_score' [C:/Users/ececa/VivadoProjects18/cs223_project/cs223_project.srcs/sources_1/new/fsm_score.sv:21]
+	Parameter S0 bound to: 4'b0000 
+	Parameter S1 bound to: 4'b0001 
+	Parameter S2 bound to: 4'b0010 
+	Parameter S3 bound to: 4'b0011 
+	Parameter S4 bound to: 4'b0100 
+	Parameter S5 bound to: 4'b0101 
+	Parameter S6 bound to: 4'b0110 
+	Parameter S7 bound to: 4'b0111 
+	Parameter S8 bound to: 4'b1000 
+	Parameter S9 bound to: 4'b1001 
+	Parameter S10 bound to: 4'b1010 
+WARNING: [Synth 8-567] referenced signal 'nextState' should be on the sensitivity list [C:/Users/ececa/VivadoProjects18/cs223_project/cs223_project.srcs/sources_1/new/fsm_score.sv:51]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/ececa/VivadoProjects18/cs223_project/cs223_project.srcs/sources_1/new/fsm_score.sv:97]
+INFO: [Synth 8-256] done synthesizing module 'fsm_score' (1#1) [C:/Users/ececa/VivadoProjects18/cs223_project/cs223_project.srcs/sources_1/new/fsm_score.sv:21]
+INFO: [Synth 8-638] synthesizing module 'SevSeg_4digit' [C:/Users/ececa/VivadoProjects18/cs223_project/cs223_project.srcs/sources_1/new/SevSeg_4digit.sv:37]
+	Parameter N bound to: 18 - type: integer 
+INFO: [Synth 8-226] default block is never used [C:/Users/ececa/VivadoProjects18/cs223_project/cs223_project.srcs/sources_1/new/SevSeg_4digit.sv:93]
+INFO: [Synth 8-256] done synthesizing module 'SevSeg_4digit' (2#1) [C:/Users/ececa/VivadoProjects18/cs223_project/cs223_project.srcs/sources_1/new/SevSeg_4digit.sv:37]
+INFO: [Synth 8-638] synthesizing module 'display_8x8' [C:/Users/ececa/VivadoProjects18/cs223_project/cs223_project.srcs/sources_1/new/display_8X8.sv:34]
+INFO: [Synth 8-638] synthesizing module 'GND' [C:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:4942]
+INFO: [Synth 8-256] done synthesizing module 'GND' (3#1) [C:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:4942]
+INFO: [Synth 8-638] synthesizing module 'LUT2' [C:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:25490]
+	Parameter INIT bound to: 4'b0111 
+INFO: [Synth 8-256] done synthesizing module 'LUT2' (4#1) [C:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:25490]
+INFO: [Synth 8-638] synthesizing module 'LUT3' [C:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:25528]
+	Parameter INIT bound to: 8'b10001111 
+INFO: [Synth 8-256] done synthesizing module 'LUT3' (5#1) [C:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:25528]
+INFO: [Synth 8-638] synthesizing module 'LUT3__parameterized0' [C:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:25528]
+	Parameter INIT bound to: 8'b00101010 
+INFO: [Synth 8-256] done synthesizing module 'LUT3__parameterized0' (5#1) [C:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:25528]
+INFO: [Synth 8-638] synthesizing module 'VCC' [C:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:52070]
+INFO: [Synth 8-256] done synthesizing module 'VCC' (6#1) [C:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:52070]
+INFO: [Synth 8-638] synthesizing module 'LUT2__parameterized0' [C:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:25490]
+	Parameter INIT bound to: 4'b0001 
+INFO: [Synth 8-256] done synthesizing module 'LUT2__parameterized0' (6#1) [C:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:25490]
+INFO: [Synth 8-638] synthesizing module 'LUT3__parameterized1' [C:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:25528]
+	Parameter INIT bound to: 8'b00010100 
+INFO: [Synth 8-256] done synthesizing module 'LUT3__parameterized1' (6#1) [C:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:25528]
+INFO: [Synth 8-638] synthesizing module 'LUT4' [C:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:25570]
+	Parameter INIT bound to: 16'b0001010101000000 
+INFO: [Synth 8-256] done synthesizing module 'LUT4' (7#1) [C:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:25570]
+INFO: [Synth 8-638] synthesizing module 'LUT5' [C:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:25616]
+	Parameter INIT bound to: 32'b00010101010101010100000000000000 
+INFO: [Synth 8-256] done synthesizing module 'LUT5' (8#1) [C:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:25616]
+INFO: [Synth 8-638] synthesizing module 'LUT3__parameterized2' [C:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:25528]
+	Parameter INIT bound to: 8'b10111010 
+INFO: [Synth 8-256] done synthesizing module 'LUT3__parameterized2' (8#1) [C:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:25528]
+INFO: [Synth 8-638] synthesizing module 'LUT6' [C:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:25666]
+	Parameter INIT bound to: 64'b0001010101010101010101010101010101000000000000000000000000000000 
+INFO: [Synth 8-256] done synthesizing module 'LUT6' (9#1) [C:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:25666]
+INFO: [Synth 8-638] synthesizing module 'FDRE' [C:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:3964]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'FDRE' (10#1) [C:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:3964]
+INFO: [Synth 8-638] synthesizing module 'LUT5__parameterized0' [C:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:25616]
+	Parameter INIT bound to: 32'b00000000000000000000000000000001 
+INFO: [Synth 8-256] done synthesizing module 'LUT5__parameterized0' (10#1) [C:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:25616]
+INFO: [Synth 8-638] synthesizing module 'LUT4__parameterized0' [C:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:25570]
+	Parameter INIT bound to: 16'b1111111111111110 
+INFO: [Synth 8-256] done synthesizing module 'LUT4__parameterized0' (10#1) [C:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:25570]
+INFO: [Synth 8-638] synthesizing module 'LUT1' [C:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:25456]
+	Parameter INIT bound to: 2'b01 
+INFO: [Synth 8-256] done synthesizing module 'LUT1' (11#1) [C:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:25456]
+INFO: [Synth 8-638] synthesizing module 'LUT2__parameterized1' [C:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:25490]
+	Parameter INIT bound to: 4'b0110 
+INFO: [Synth 8-256] done synthesizing module 'LUT2__parameterized1' (11#1) [C:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:25490]
+INFO: [Synth 8-638] synthesizing module 'LUT3__parameterized3' [C:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:25528]
+	Parameter INIT bound to: 8'b01111000 
+INFO: [Synth 8-256] done synthesizing module 'LUT3__parameterized3' (11#1) [C:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:25528]
+INFO: [Synth 8-638] synthesizing module 'LUT4__parameterized1' [C:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:25570]
+	Parameter INIT bound to: 16'b0111111110000000 
+INFO: [Synth 8-256] done synthesizing module 'LUT4__parameterized1' (11#1) [C:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:25570]
+INFO: [Synth 8-638] synthesizing module 'LUT5__parameterized1' [C:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:25616]
+	Parameter INIT bound to: 32'b01111111111111111000000000000000 
+INFO: [Synth 8-256] done synthesizing module 'LUT5__parameterized1' (11#1) [C:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:25616]
+INFO: [Synth 8-638] synthesizing module 'LUT6__parameterized0' [C:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:25666]
+	Parameter INIT bound to: 64'b0111111111111111111111111111111110000000000000000000000000000000 
+INFO: [Synth 8-256] done synthesizing module 'LUT6__parameterized0' (11#1) [C:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:25666]
+INFO: [Synth 8-638] synthesizing module 'LUT6__parameterized1' [C:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:25666]
+	Parameter INIT bound to: 64'b1000000000000000000000000000000000000000000000000000000000000000 
+INFO: [Synth 8-256] done synthesizing module 'LUT6__parameterized1' (11#1) [C:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:25666]
+INFO: [Synth 8-638] synthesizing module 'LUT6__parameterized2' [C:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:25666]
+	Parameter INIT bound to: 64'b0000000000000000100000000000000000000000000000000000000000000000 
+INFO: [Synth 8-256] done synthesizing module 'LUT6__parameterized2' (11#1) [C:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:25666]
+INFO: [Synth 8-638] synthesizing module 'LUT4__parameterized2' [C:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:25570]
+	Parameter INIT bound to: 16'b0000000100000000 
+INFO: [Synth 8-256] done synthesizing module 'LUT4__parameterized2' (11#1) [C:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:25570]
+INFO: [Synth 8-638] synthesizing module 'LUT5__parameterized2' [C:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:25616]
+	Parameter INIT bound to: 32'b00000000000000000000000000000100 
+INFO: [Synth 8-256] done synthesizing module 'LUT5__parameterized2' (11#1) [C:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:25616]
+INFO: [Synth 8-638] synthesizing module 'LUT3__parameterized4' [C:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:25528]
+	Parameter INIT bound to: 8'b10000000 
+INFO: [Synth 8-256] done synthesizing module 'LUT3__parameterized4' (11#1) [C:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:25528]
+INFO: [Synth 8-638] synthesizing module 'LUT3__parameterized5' [C:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:25528]
+	Parameter INIT bound to: 8'b00001000 
+INFO: [Synth 8-256] done synthesizing module 'LUT3__parameterized5' (11#1) [C:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:25528]
+INFO: [Synth 8-638] synthesizing module 'LUT3__parameterized6' [C:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:25528]
+	Parameter INIT bound to: 8'b00000100 
+INFO: [Synth 8-256] done synthesizing module 'LUT3__parameterized6' (11#1) [C:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:25528]
+INFO: [Synth 8-638] synthesizing module 'LUT3__parameterized7' [C:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:25528]
+	Parameter INIT bound to: 8'b00000001 
+INFO: [Synth 8-256] done synthesizing module 'LUT3__parameterized7' (11#1) [C:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:25528]
+INFO: [Synth 8-638] synthesizing module 'LUT6__parameterized3' [C:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:25666]
+	Parameter INIT bound to: 64'b0000000100000000111111111111111100000001000000000000000100000000 
+INFO: [Synth 8-256] done synthesizing module 'LUT6__parameterized3' (11#1) [C:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:25666]
+INFO: [Synth 8-638] synthesizing module 'LUT3__parameterized8' [C:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:25528]
+	Parameter INIT bound to: 8'b10111000 
+INFO: [Synth 8-256] done synthesizing module 'LUT3__parameterized8' (11#1) [C:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:25528]
+INFO: [Synth 8-638] synthesizing module 'LUT6__parameterized4' [C:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:25666]
+	Parameter INIT bound to: 64'b0000000100010001111111111111111111111111111111111111111111111111 
+INFO: [Synth 8-256] done synthesizing module 'LUT6__parameterized4' (11#1) [C:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:25666]
+INFO: [Synth 8-638] synthesizing module 'LUT3__parameterized9' [C:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:25528]
+	Parameter INIT bound to: 8'b11111110 
+INFO: [Synth 8-256] done synthesizing module 'LUT3__parameterized9' (11#1) [C:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:25528]
+INFO: [Synth 8-638] synthesizing module 'LUT2__parameterized2' [C:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:25490]
+	Parameter INIT bound to: 4'b1000 
+INFO: [Synth 8-256] done synthesizing module 'LUT2__parameterized2' (11#1) [C:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:25490]
+INFO: [Synth 8-638] synthesizing module 'LUT6__parameterized5' [C:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:25666]
+	Parameter INIT bound to: 64'b1111111101111111111111111111111100000000100000000000000000000000 
+INFO: [Synth 8-256] done synthesizing module 'LUT6__parameterized5' (11#1) [C:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:25666]
+INFO: [Synth 8-638] synthesizing module 'LUT3__parameterized10' [C:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:25528]
+	Parameter INIT bound to: 8'b10110100 
+INFO: [Synth 8-256] done synthesizing module 'LUT3__parameterized10' (11#1) [C:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:25528]
+INFO: [Synth 8-638] synthesizing module 'LUT4__parameterized3' [C:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:25570]
+	Parameter INIT bound to: 16'b1111011100001000 
+INFO: [Synth 8-256] done synthesizing module 'LUT4__parameterized3' (11#1) [C:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:25570]
+INFO: [Synth 8-638] synthesizing module 'LUT4__parameterized4' [C:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:25570]
+	Parameter INIT bound to: 16'b0000000000000010 
+INFO: [Synth 8-256] done synthesizing module 'LUT4__parameterized4' (11#1) [C:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:25570]
+INFO: [Synth 8-638] synthesizing module 'LUT5__parameterized3' [C:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:25616]
+	Parameter INIT bound to: 32'b11011111111111110010000000000000 
+INFO: [Synth 8-256] done synthesizing module 'LUT5__parameterized3' (11#1) [C:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:25616]
+INFO: [Synth 8-638] synthesizing module 'LUT6__parameterized6' [C:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:25666]
+	Parameter INIT bound to: 64'b1111111111111111111111111111111101010101011111111111111111111111 
+INFO: [Synth 8-256] done synthesizing module 'LUT6__parameterized6' (11#1) [C:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:25666]
+INFO: [Synth 8-638] synthesizing module 'LUT5__parameterized4' [C:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:25616]
+	Parameter INIT bound to: 32'b01011101111111111111111111111111 
+INFO: [Synth 8-256] done synthesizing module 'LUT5__parameterized4' (11#1) [C:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:25616]
+INFO: [Synth 8-638] synthesizing module 'LUT5__parameterized5' [C:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:25616]
+	Parameter INIT bound to: 32'b11111111111111111101010111111111 
+INFO: [Synth 8-256] done synthesizing module 'LUT5__parameterized5' (11#1) [C:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:25616]
+INFO: [Synth 8-638] synthesizing module 'LUT6__parameterized7' [C:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:25666]
+	Parameter INIT bound to: 64'b0111111111111111111111111111111111111111111111111111111111111111 
+INFO: [Synth 8-256] done synthesizing module 'LUT6__parameterized7' (11#1) [C:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:25666]
+INFO: [Synth 8-638] synthesizing module 'LUT6__parameterized8' [C:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:25666]
+	Parameter INIT bound to: 64'b1111111111111111111111111111111011111111111111101111111111111110 
+INFO: [Synth 8-256] done synthesizing module 'LUT6__parameterized8' (11#1) [C:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:25666]
+INFO: [Synth 8-256] done synthesizing module 'display_8x8' (12#1) [C:/Users/ececa/VivadoProjects18/cs223_project/cs223_project.srcs/sources_1/new/display_8X8.sv:34]
+INFO: [Synth 8-638] synthesizing module 'fsm_game' [C:/Users/ececa/VivadoProjects18/cs223_project/cs223_project.srcs/sources_1/new/fsm_game.sv:21]
+	Parameter S0 bound to: 4'b0000 
+	Parameter S1 bound to: 4'b0001 
+	Parameter S2 bound to: 4'b0010 
+	Parameter S3 bound to: 4'b0011 
+	Parameter S4 bound to: 4'b0100 
+	Parameter S5 bound to: 4'b0101 
+	Parameter S6 bound to: 4'b0110 
+	Parameter S7 bound to: 4'b0111 
+	Parameter S8 bound to: 4'b1000 
+	Parameter S9 bound to: 4'b1001 
+	Parameter S10 bound to: 4'b1010 
+	Parameter S11 bound to: 4'b1011 
+WARNING: [Synth 8-567] referenced signal 'nextState' should be on the sensitivity list [C:/Users/ececa/VivadoProjects18/cs223_project/cs223_project.srcs/sources_1/new/fsm_game.sv:55]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/ececa/VivadoProjects18/cs223_project/cs223_project.srcs/sources_1/new/fsm_game.sv:105]
+INFO: [Synth 8-256] done synthesizing module 'fsm_game' (13#1) [C:/Users/ececa/VivadoProjects18/cs223_project/cs223_project.srcs/sources_1/new/fsm_game.sv:21]
+INFO: [Synth 8-638] synthesizing module 'stepmotor' [C:/Users/ececa/VivadoProjects18/cs223_project/cs223_project.srcs/sources_1/new/stepmotor.sv:32]
+INFO: [Synth 8-638] synthesizing module 'LUT2__parameterized3' [C:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:25490]
+	Parameter INIT bound to: 4'b1110 
+INFO: [Synth 8-256] done synthesizing module 'LUT2__parameterized3' (13#1) [C:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:25490]
+INFO: [Synth 8-638] synthesizing module 'LUT2__parameterized4' [C:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:25490]
+	Parameter INIT bound to: 4'b0010 
+INFO: [Synth 8-256] done synthesizing module 'LUT2__parameterized4' (13#1) [C:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:25490]
+INFO: [Synth 8-638] synthesizing module 'LUT3__parameterized11' [C:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:25528]
+	Parameter INIT bound to: 8'b01110100 
+INFO: [Synth 8-256] done synthesizing module 'LUT3__parameterized11' (13#1) [C:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:25528]
+INFO: [Synth 8-638] synthesizing module 'LUT5__parameterized6' [C:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:25616]
+	Parameter INIT bound to: 32'b10010110111111111001011000000000 
+INFO: [Synth 8-256] done synthesizing module 'LUT5__parameterized6' (13#1) [C:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:25616]
+INFO: [Synth 8-638] synthesizing module 'LUT5__parameterized7' [C:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:25616]
+	Parameter INIT bound to: 32'b00000000000000001000000000000000 
+INFO: [Synth 8-256] done synthesizing module 'LUT5__parameterized7' (13#1) [C:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:25616]
+INFO: [Synth 8-638] synthesizing module 'LUT6__parameterized9' [C:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:25666]
+	Parameter INIT bound to: 64'b0000000000000000000000000000000000000000000000000000000000000001 
+INFO: [Synth 8-256] done synthesizing module 'LUT6__parameterized9' (13#1) [C:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:25666]
+INFO: [Synth 8-638] synthesizing module 'LUT4__parameterized5' [C:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:25570]
+	Parameter INIT bound to: 16'b1000000000000001 
+INFO: [Synth 8-256] done synthesizing module 'LUT4__parameterized5' (13#1) [C:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:25570]
+INFO: [Synth 8-638] synthesizing module 'LUT4__parameterized6' [C:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:25570]
+	Parameter INIT bound to: 16'b1001000000001001 
+INFO: [Synth 8-256] done synthesizing module 'LUT4__parameterized6' (13#1) [C:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:25570]
+INFO: [Synth 8-638] synthesizing module 'CARRY4' [C:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:961]
+INFO: [Synth 8-256] done synthesizing module 'CARRY4' (14#1) [C:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:961]
+WARNING: [Synth 8-689] width (3) of port connection 'CO' does not match port width (4) of module 'CARRY4' [C:/Users/ececa/VivadoProjects18/cs223_project/cs223_project.srcs/sources_1/new/stepmotor.sv:317]
+WARNING: [Synth 8-350] instance 'count_reg[0]_i_1' of module 'CARRY4' requires 6 connections, but only 5 given [C:/Users/ececa/VivadoProjects18/cs223_project/cs223_project.srcs/sources_1/new/stepmotor.sv:315]
+WARNING: [Synth 8-350] instance 'count_reg[0]_i_4' of module 'CARRY4' requires 6 connections, but only 5 given [C:/Users/ececa/VivadoProjects18/cs223_project/cs223_project.srcs/sources_1/new/stepmotor.sv:328]
+WARNING: [Synth 8-689] width (3) of port connection 'CO' does not match port width (4) of module 'CARRY4' [C:/Users/ececa/VivadoProjects18/cs223_project/cs223_project.srcs/sources_1/new/stepmotor.sv:399]
+INFO: [Synth 8-638] synthesizing module 'LUT2__parameterized5' [C:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:25490]
+	Parameter INIT bound to: 4'b1001 
+INFO: [Synth 8-256] done synthesizing module 'LUT2__parameterized5' (14#1) [C:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:25490]
+INFO: [Synth 8-256] done synthesizing module 'stepmotor' (15#1) [C:/Users/ececa/VivadoProjects18/cs223_project/cs223_project.srcs/sources_1/new/stepmotor.sv:32]
+INFO: [Synth 8-256] done synthesizing module 'top' (16#1) [C:/Users/ececa/VivadoProjects18/cs223_project/cs223_project.srcs/sources_1/new/top.sv:1]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 398.777 ; gain = 154.754
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 398.777 ; gain = 154.754
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 7 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/ececa/VivadoProjects18/cs223_project/cs223_project.srcs/constrs_1/new/top.xdc]
+Finished Parsing XDC File [C:/Users/ececa/VivadoProjects18/cs223_project/cs223_project.srcs/constrs_1/new/top.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/ececa/VivadoProjects18/cs223_project/cs223_project.srcs/constrs_1/new/top.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 737.340 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 737.340 ; gain = 493.316
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 737.340 ; gain = 493.316
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 737.340 ; gain = 493.316
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'nextState_reg' in module 'fsm_score'
+INFO: [Synth 8-5544] ROM "score_r" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "score_l" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "nextState" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "nextState" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "nextState" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "nextState" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "nextState" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "nextState" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+WARNING: [Synth 8-6014] Unused sequential element count_reg was removed.  [C:/Users/ececa/VivadoProjects18/cs223_project/cs223_project.srcs/sources_1/new/SevSeg_4digit.sv:48]
+INFO: [Synth 8-4471] merging register 'blue_reg[1][7:0]' into 'blue_reg[7][7:0]' [C:/Users/ececa/VivadoProjects18/cs223_project/cs223_project.srcs/sources_1/new/fsm_game.sv:108]
+INFO: [Synth 8-4471] merging register 'blue_reg[0][7:0]' into 'blue_reg[7][7:0]' [C:/Users/ececa/VivadoProjects18/cs223_project/cs223_project.srcs/sources_1/new/fsm_game.sv:108]
+WARNING: [Synth 8-6014] Unused sequential element blue_reg[1] was removed.  [C:/Users/ececa/VivadoProjects18/cs223_project/cs223_project.srcs/sources_1/new/fsm_game.sv:108]
+WARNING: [Synth 8-6014] Unused sequential element blue_reg[0] was removed.  [C:/Users/ececa/VivadoProjects18/cs223_project/cs223_project.srcs/sources_1/new/fsm_game.sv:108]
+INFO: [Synth 8-802] inferred FSM for state register 'nextState_reg' in module 'fsm_game'
+INFO: [Synth 8-5546] ROM "red" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "red" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "red" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "red" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "red" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "red" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "red" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "red" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "red" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "red" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "blue" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "blue" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "blue" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "blue" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "blue" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "blue" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "red" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "nextState" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "nextState" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "nextState" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "nextState" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "nextState" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "nextState" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "nextState" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5545] ROM "counter" won't be mapped to RAM because address size (29) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "stop" won't be mapped to RAM because address size (29) is larger than maximum supported(25)
+WARNING: [Synth 8-6014] Unused sequential element counter_reg was removed.  [C:/Users/ececa/VivadoProjects18/cs223_project/cs223_project.srcs/sources_1/new/top.sv:55]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                      S0 |                             0000 |                             0000
+                      S1 |                             0001 |                             0001
+                      S2 |                             0010 |                             0010
+                      S3 |                             0011 |                             0011
+                      S4 |                             0100 |                             0100
+                      S5 |                             0101 |                             0101
+                      S6 |                             0110 |                             0110
+                      S7 |                             0111 |                             0111
+                      S8 |                             1000 |                             1000
+                      S9 |                             1001 |                             1001
+                     S10 |                             1010 |                             1010
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'nextState_reg' using encoding 'sequential' in module 'fsm_score'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                      S0 |                     000000000001 |                             0000
+                      S1 |                     000000000010 |                             0001
+                     S11 |                     000000000100 |                             1011
+                      S2 |                     000000001000 |                             0010
+                      S3 |                     000000010000 |                             0011
+                      S4 |                     000000100000 |                             0100
+                      S5 |                     000001000000 |                             0101
+                      S6 |                     000010000000 |                             0110
+                      S7 |                     000100000000 |                             0111
+                      S8 |                     001000000000 |                             1000
+                      S9 |                     010000000000 |                             1001
+                     S10 |                     100000000000 |                             1010
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'nextState_reg' using encoding 'one-hot' in module 'fsm_game'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:32 ; elapsed = 00:00:34 . Memory (MB): peak = 737.340 ; gain = 493.316
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     32 Bit       Adders := 2     
+	   2 Input      7 Bit       Adders := 4     
++---Registers : 
+	                8 Bit    Registers := 14    
+	                7 Bit    Registers := 2     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	  25 Input     12 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 2     
+	  12 Input      8 Bit        Muxes := 7     
+	  11 Input      7 Bit        Muxes := 2     
+	   2 Input      7 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 4     
+	  11 Input      4 Bit        Muxes := 1     
+	  22 Input      4 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 1     
+	  12 Input      4 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 3     
+	  11 Input      1 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 40    
+	   3 Input      1 Bit        Muxes := 20    
+	   5 Input      1 Bit        Muxes := 2     
+	  12 Input      1 Bit        Muxes := 13    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module top 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     32 Bit       Adders := 2     
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 2     
+Module fsm_score 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      7 Bit       Adders := 4     
++---Registers : 
+	                7 Bit    Registers := 2     
++---Muxes : 
+	  11 Input      7 Bit        Muxes := 2     
+	  11 Input      4 Bit        Muxes := 1     
+	  22 Input      4 Bit        Muxes := 1     
+	  11 Input      1 Bit        Muxes := 2     
+Module SevSeg_4digit 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input      4 Bit        Muxes := 2     
+Module fsm_game 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 14    
++---Muxes : 
+	  25 Input     12 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 2     
+	  12 Input      8 Bit        Muxes := 7     
+	   2 Input      7 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 4     
+	   2 Input      4 Bit        Muxes := 1     
+	  12 Input      4 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 38    
+	   3 Input      1 Bit        Muxes := 20    
+	   5 Input      1 Bit        Muxes := 2     
+	  12 Input      1 Bit        Muxes := 13    
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-6014] Unused sequential element count_reg was removed.  [C:/Users/ececa/VivadoProjects18/cs223_project/cs223_project.srcs/sources_1/new/SevSeg_4digit.sv:48]
+INFO: [Synth 8-5546] ROM "red" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "red" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "red" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "red" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "red" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "red" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "blue" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "blue" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "counter" won't be mapped to RAM because address size (29) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "stop" won't be mapped to RAM because address size (29) is larger than maximum supported(25)
+WARNING: [Synth 8-6014] Unused sequential element counter_reg was removed.  [C:/Users/ececa/VivadoProjects18/cs223_project/cs223_project.srcs/sources_1/new/top.sv:55]
+INFO: [Synth 8-3886] merging instance 'fg/blue_reg[6][0]' (FDE) to 'fg/blue_reg[6][1]'
+INFO: [Synth 8-3886] merging instance 'fg/blue_reg[5][0]' (FDE) to 'fg/blue_reg[5][7]'
+INFO: [Synth 8-3886] merging instance 'fg/blue_reg[4][0]' (FDE) to 'fg/blue_reg[4][5]'
+INFO: [Synth 8-3886] merging instance 'fg/blue_reg[3][0]' (FDE) to 'fg/blue_reg[3][7]'
+INFO: [Synth 8-3886] merging instance 'fg/blue_reg[2][0]' (FDE) to 'fg/blue_reg[2][7]'
+INFO: [Synth 8-3886] merging instance 'fg/blue_reg[7][0]' (FDE) to 'fg/red_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'fg/blue_reg[6][1]' (FDE) to 'fg/blue_reg[6][4]'
+INFO: [Synth 8-3886] merging instance 'fg/blue_reg[5][1]' (FDE) to 'fg/blue_reg[5][7]'
+INFO: [Synth 8-3886] merging instance 'fg/blue_reg[4][1]' (FDE) to 'fg/blue_reg[4][5]'
+INFO: [Synth 8-3886] merging instance 'fg/blue_reg[3][1]' (FDE) to 'fg/blue_reg[3][7]'
+INFO: [Synth 8-3886] merging instance 'fg/blue_reg[2][1]' (FDE) to 'fg/blue_reg[2][7]'
+INFO: [Synth 8-3886] merging instance 'fg/blue_reg[7][1]' (FDE) to 'fg/red_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'fg/blue_reg[6][2]' (FDE) to 'fg/blue_reg[6][3]'
+INFO: [Synth 8-3886] merging instance 'fg/blue_reg[5][2]' (FDE) to 'fg/blue_reg[5][3]'
+INFO: [Synth 8-3886] merging instance 'fg/blue_reg[4][2]' (FDE) to 'fg/blue_reg[4][3]'
+INFO: [Synth 8-3886] merging instance 'fg/blue_reg[3][2]' (FDE) to 'fg/blue_reg[3][3]'
+INFO: [Synth 8-3886] merging instance 'fg/blue_reg[2][2]' (FDE) to 'fg/blue_reg[2][3]'
+INFO: [Synth 8-3886] merging instance 'fg/blue_reg[7][2]' (FDE) to 'fg/red_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'fg/blue_reg[7][3]' (FDE) to 'fg/red_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'fg/blue_reg[6][4]' (FDE) to 'fg/blue_reg[6][5]'
+INFO: [Synth 8-3886] merging instance 'fg/blue_reg[5][4]' (FDE) to 'fg/blue_reg[5][7]'
+INFO: [Synth 8-3886] merging instance 'fg/blue_reg[4][4]' (FDE) to 'fg/blue_reg[4][5]'
+INFO: [Synth 8-3886] merging instance 'fg/blue_reg[3][4]' (FDE) to 'fg/blue_reg[3][7]'
+INFO: [Synth 8-3886] merging instance 'fg/blue_reg[2][4]' (FDE) to 'fg/blue_reg[2][7]'
+INFO: [Synth 8-3886] merging instance 'fg/blue_reg[7][4]' (FDE) to 'fg/red_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'fg/blue_reg[6][5]' (FDE) to 'fg/blue_reg[6][6]'
+INFO: [Synth 8-3886] merging instance 'fg/blue_reg[5][5]' (FDE) to 'fg/blue_reg[5][7]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (fg/\blue_reg[4][5] )
+INFO: [Synth 8-3886] merging instance 'fg/blue_reg[3][5]' (FDE) to 'fg/blue_reg[3][7]'
+INFO: [Synth 8-3886] merging instance 'fg/blue_reg[2][5]' (FDE) to 'fg/blue_reg[2][7]'
+INFO: [Synth 8-3886] merging instance 'fg/blue_reg[7][5]' (FDE) to 'fg/red_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'fg/blue_reg[6][6]' (FDE) to 'fg/blue_reg[6][7]'
+INFO: [Synth 8-3886] merging instance 'fg/blue_reg[5][6]' (FDE) to 'fg/blue_reg[5][7]'
+INFO: [Synth 8-3886] merging instance 'fg/blue_reg[4][6]' (FDE) to 'fg/blue_reg[4][7]'
+INFO: [Synth 8-3886] merging instance 'fg/blue_reg[3][6]' (FDE) to 'fg/blue_reg[3][7]'
+INFO: [Synth 8-3886] merging instance 'fg/blue_reg[2][6]' (FDE) to 'fg/blue_reg[2][7]'
+INFO: [Synth 8-3886] merging instance 'fg/blue_reg[7][6]' (FDE) to 'fg/red_reg[0][0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (fg/\blue_reg[6][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (fg/\blue_reg[5][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (fg/\blue_reg[3][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (fg/\blue_reg[2][7] )
+INFO: [Synth 8-3886] merging instance 'fg/blue_reg[7][7]' (FDE) to 'fg/red_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'fg/red_reg[7][0]' (FDE) to 'fg/red_reg[7][1]'
+INFO: [Synth 8-3886] merging instance 'fg/red_reg[6][0]' (FDE) to 'fg/red_reg[6][1]'
+INFO: [Synth 8-3886] merging instance 'fg/red_reg[5][0]' (FDE) to 'fg/red_reg[5][1]'
+INFO: [Synth 8-3886] merging instance 'fg/red_reg[2][0]' (FDE) to 'fg/red_reg[2][1]'
+INFO: [Synth 8-3886] merging instance 'fg/red_reg[1][0]' (FDE) to 'fg/red_reg[1][1]'
+INFO: [Synth 8-3886] merging instance 'fg/red_reg[0][0]' (FDE) to 'fg/red_reg[0][1]'
+INFO: [Synth 8-3886] merging instance 'fg/red_reg[0][1]' (FDE) to 'fg/red_reg[0][2]'
+INFO: [Synth 8-3886] merging instance 'fg/red_reg[7][2]' (FDE) to 'fg/red_reg[7][6]'
+INFO: [Synth 8-3886] merging instance 'fg/red_reg[6][2]' (FDE) to 'fg/red_reg[6][7]'
+INFO: [Synth 8-3886] merging instance 'fg/red_reg[5][2]' (FDE) to 'fg/red_reg[5][6]'
+INFO: [Synth 8-3886] merging instance 'fg/red_reg[4][2]' (FDE) to 'fg/red_reg[4][7]'
+INFO: [Synth 8-3886] merging instance 'fg/red_reg[3][2]' (FDE) to 'fg/red_reg[3][7]'
+INFO: [Synth 8-3886] merging instance 'fg/red_reg[2][2]' (FDE) to 'fg/red_reg[2][6]'
+INFO: [Synth 8-3886] merging instance 'fg/red_reg[1][2]' (FDE) to 'fg/red_reg[1][7]'
+INFO: [Synth 8-3886] merging instance 'fg/red_reg[0][2]' (FDE) to 'fg/red_reg[0][6]'
+INFO: [Synth 8-3886] merging instance 'fg/red_reg[7][3]' (FDE) to 'fg/red_reg[7][5]'
+INFO: [Synth 8-3886] merging instance 'fg/red_reg[6][3]' (FDE) to 'fg/red_reg[6][5]'
+INFO: [Synth 8-3886] merging instance 'fg/red_reg[2][3]' (FDE) to 'fg/red_reg[2][5]'
+INFO: [Synth 8-3886] merging instance 'fg/red_reg[1][3]' (FDE) to 'fg/red_reg[1][5]'
+INFO: [Synth 8-3886] merging instance 'fg/red_reg[0][3]' (FDE) to 'fg/red_reg[0][5]'
+INFO: [Synth 8-3886] merging instance 'fg/red_reg[6][4]' (FDE) to 'fg/red_reg[6][5]'
+INFO: [Synth 8-3886] merging instance 'fg/red_reg[5][4]' (FDE) to 'fg/red_reg[5][5]'
+INFO: [Synth 8-3886] merging instance 'fg/red_reg[4][4]' (FDE) to 'fg/red_reg[4][5]'
+INFO: [Synth 8-3886] merging instance 'fg/red_reg[3][4]' (FDE) to 'fg/red_reg[3][5]'
+INFO: [Synth 8-3886] merging instance 'fg/red_reg[2][4]' (FDE) to 'fg/red_reg[2][5]'
+INFO: [Synth 8-3886] merging instance 'fg/red_reg[1][4]' (FDE) to 'fg/red_reg[1][5]'
+INFO: [Synth 8-3886] merging instance 'fg/red_reg[7][6]' (FDE) to 'fg/red_reg[7][7]'
+INFO: [Synth 8-3886] merging instance 'fg/red_reg[6][6]' (FDE) to 'fg/red_reg[6][7]'
+INFO: [Synth 8-3886] merging instance 'fg/red_reg[4][6]' (FDE) to 'fg/red_reg[4][7]'
+INFO: [Synth 8-3886] merging instance 'fg/red_reg[3][6]' (FDE) to 'fg/red_reg[3][7]'
+INFO: [Synth 8-3886] merging instance 'fg/red_reg[1][6]' (FDE) to 'fg/red_reg[1][7]'
+INFO: [Synth 8-3886] merging instance 'fg/red_reg[0][6]' (FDE) to 'fg/red_reg[0][7]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (fg/\red_reg[7][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (fg/\red_reg[6][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (fg/\red_reg[5][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (fg/\red_reg[2][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (fg/\red_reg[1][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (fg/\red_reg[0][7] )
+WARNING: [Synth 8-3332] Sequential element (red_reg[1][7]) is unused and will be removed from module fsm_game.
+WARNING: [Synth 8-3332] Sequential element (red_reg[2][7]) is unused and will be removed from module fsm_game.
+WARNING: [Synth 8-3332] Sequential element (red_reg[5][7]) is unused and will be removed from module fsm_game.
+WARNING: [Synth 8-3332] Sequential element (red_reg[6][7]) is unused and will be removed from module fsm_game.
+WARNING: [Synth 8-3332] Sequential element (red_reg[7][7]) is unused and will be removed from module fsm_game.
+WARNING: [Synth 8-3332] Sequential element (blue_reg[2][7]) is unused and will be removed from module fsm_game.
+WARNING: [Synth 8-3332] Sequential element (blue_reg[3][7]) is unused and will be removed from module fsm_game.
+WARNING: [Synth 8-3332] Sequential element (blue_reg[4][5]) is unused and will be removed from module fsm_game.
+WARNING: [Synth 8-3332] Sequential element (blue_reg[5][7]) is unused and will be removed from module fsm_game.
+WARNING: [Synth 8-3332] Sequential element (blue_reg[6][7]) is unused and will be removed from module fsm_game.
+WARNING: [Synth 8-3332] Sequential element (red_reg[0][7]) is unused and will be removed from module fsm_game.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:39 ; elapsed = 00:00:41 . Memory (MB): peak = 737.340 ; gain = 493.316
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:55 ; elapsed = 00:00:57 . Memory (MB): peak = 741.727 ; gain = 497.703
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:56 ; elapsed = 00:00:59 . Memory (MB): peak = 767.191 ; gain = 523.168
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:57 ; elapsed = 00:01:00 . Memory (MB): peak = 772.906 ; gain = 528.883
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:59 ; elapsed = 00:01:01 . Memory (MB): peak = 772.906 ; gain = 528.883
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:59 ; elapsed = 00:01:01 . Memory (MB): peak = 772.906 ; gain = 528.883
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:59 ; elapsed = 00:01:02 . Memory (MB): peak = 772.906 ; gain = 528.883
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:59 ; elapsed = 00:01:02 . Memory (MB): peak = 772.906 ; gain = 528.883
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:59 ; elapsed = 00:01:02 . Memory (MB): peak = 772.906 ; gain = 528.883
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:59 ; elapsed = 00:01:02 . Memory (MB): peak = 772.906 ; gain = 528.883
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |   139|
+|3     |LUT1   |    37|
+|4     |LUT2   |   173|
+|5     |LUT3   |   183|
+|6     |LUT4   |   210|
+|7     |LUT5   |    94|
+|8     |LUT6   |   235|
+|9     |MUXF7  |     5|
+|10    |FDRE   |   159|
+|11    |FDSE   |    29|
+|12    |IBUF   |    12|
+|13    |OBUF   |    37|
++------+-------+------+
+
+Report Instance Areas: 
++------+------------------+--------------+------+
+|      |Instance          |Module        |Cells |
++------+------------------+--------------+------+
+|1     |top               |              |  1314|
+|2     |  SevSeg          |SevSeg_4digit |    39|
+|3     |  display_8x8_0   |display_8x8   |   130|
+|4     |  stepmotor_inst0 |stepmotor     |    54|
+|5     |  fg              |fsm_game      |   159|
+|6     |  fs              |fsm_score     |   380|
++------+------------------+--------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:59 ; elapsed = 00:01:02 . Memory (MB): peak = 772.906 ; gain = 528.883
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 17 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:38 ; elapsed = 00:00:51 . Memory (MB): peak = 772.906 ; gain = 190.320
+Synthesis Optimization Complete : Time (s): cpu = 00:00:59 ; elapsed = 00:01:02 . Memory (MB): peak = 772.906 ; gain = 528.883
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 156 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+265 Infos, 23 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:02 ; elapsed = 00:01:06 . Memory (MB): peak = 772.906 ; gain = 541.879
+INFO: [Common 17-1381] The checkpoint 'C:/Users/ececa/VivadoProjects18/cs223_project/cs223_project.runs/synth_1/top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.056 . Memory (MB): peak = 772.906 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Tue May  8 15:42:48 2018...
